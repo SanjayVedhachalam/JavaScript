@@ -1,0 +1,1 @@
+document.write("Hello world in JS file");

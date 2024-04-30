@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Statements</title>
+    <script type="text/javascript">
+        document.write("<h2>If else control statement</h2>");
+        var x=7;
+
+        //Even or Odd  Program
+        if (x%2==0) {
+            document.write("The number is EVEN<br>");
+        } else {
+            document.write("The number is ODD<br>");
+        }
+
+        document.write("<h2>If else if control statement</h2>");
+        //Positive, Negative or Zero
+        if (x>0) {
+            document.write("Positive Number<br>");
+        } else if(x<0){
+            document.write("Negative Number<br>");
+        }
+        else{
+            document.write("The number is neither positive nor negative<br>");
+        }
+
+        document.write("<h2>Nested If else control statement</h2>");
+        //Positive or Negative and Even or Odd
+        if(x>0){
+            if(x%2==0){
+                document.write("Positive Number and it's a Even number<br>");
+            }
+            else{
+                document.write("Positive Number and it's a Odd number<br>");
+            }
+        }
+        else if(x<0){
+            if(x%2==0){
+                document.write("Negative Number and it's a Even number<br>");
+            }
+            else{
+                document.write("Negative Number and it's a Odd number<br>");
+            }
+        }
+        else{
+            document.write("The number is neither positive nor negative nor odd nor even");
+        }
+
+        document.write("<h2>If else control statement using Logical Operators</h2>");
+        //Positive or Negative and Even or Odd
+        if(x>0 && x%2==0){
+            document.write("Positive Number and it's a Even number<br>");
+        }
+        else if(x>0 && x%2!=0){
+            document.write("Positive Number and it's a Odd number<br>");
+        }
+        else if(x<0 && x%2==0){
+            document.write("Negative Number and it's a Even number<br>");
+        }
+        else if(x<0 && x%2!=0){
+            document.write("Negative Number and it's a Odd number<br>");
+        }
+        else{
+            document.write("The number is neither positive nor negative nor odd nor even");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

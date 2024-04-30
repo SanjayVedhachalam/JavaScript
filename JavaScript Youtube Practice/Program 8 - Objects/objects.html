@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <script type="text/javascript">
+        var Car = {
+            car_brand : "Tesla",
+            car_model : "Model 1",
+            price : 2500000,
+
+            teslaAutoPilot:function(){
+                document.write("<h3>This car has auto-pilot</h3>");
+            }
+        }
+        document.write("<h3>"+Car.car_brand+"</h3>");
+        document.write("<h3>"+Car.car_model+"</h3>");
+        document.write("<h3>"+Car.price+"</h3>");
+        Car.teslaAutoPilot();
+
+        //Function Constructors
+        function Cars(car_brand, car_model, price){
+            this.car_brand = car_brand;
+            this.car_model = car_model;
+            this.price = price;
+            this.teslaAutoPilot = function(){
+                document.write("<h3>Car Brand: "+car_brand+"</h3>");
+                document.write("<h3>Car Model: "+car_model+"</h3>");
+                document.write("<h3>Price: "+price+"</h3>");
+                document.write("<h3>This car has auto-pilot</h3>");
+            }
+        }
+        var Car1 = new Cars("Aston Martin", "Hatch-Black", 20000000);
+        var Car2 = new Cars("Lambo", "LXI", 28050000);
+        
+        Car1.teslaAutoPilot();
+        Car2.teslaAutoPilot();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
